@@ -14,7 +14,7 @@ def show_inventory(game_state: dict) -> None:
     print("Инвентарь пуст")
     
 # Функция получения ввода с клавиатуры
-def get_input(prompt="> ") -> str:
+def get_input(prompt="\n> ") -> str:
   '''
   promt - как будет отображаться строка ввода пользователя
   '''
@@ -91,8 +91,8 @@ def use_item(game_state: dict, item_name: str) -> None:
       print("Вы открыли шкатулку и получили таинственный ключ.")
       game_state['player_inventory'].remove('bronze_box')
       
-      if "rusty_key" not in game_state['player_inventory']:
-        game_state['player_inventory'].append('rusty_key')
+      if "treasure_key" not in game_state['player_inventory']:
+        game_state['player_inventory'].append('treasure_key')
     
     elif item_name == "old_armor":
       print("У вас есть старые доспехи, они помогут вам в трудную минуту.")

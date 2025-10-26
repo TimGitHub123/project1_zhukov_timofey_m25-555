@@ -76,7 +76,7 @@ def main():
         'steps_taken': 0 # Количество шагов
   }
   
-  print("Добро пожаловать в Лабиринт сокровищ!")
+  print("\nДобро пожаловать в Лабиринт сокровищ!")
   describe_current_room(game_state=game_state)
   
   while not game_state['game_over']:

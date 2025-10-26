@@ -1,4 +1,7 @@
 # labyrinth_game/constants.py
+
+
+# Константа с описанием комнат
 ROOMS = {
     'entrance': {
         'description': 'Вы в темном входе лабиринта. Стены покрыты мхом. На полу лежит старый факел.', # noqa: E501
@@ -51,6 +54,7 @@ ROOMS = {
     }
 }
 
+# Константа с описанием перевода чисел с их словарные версии (для загадок)
 NUMBERS = {
     '0': 'ноль',
     '1': 'один',
@@ -65,6 +69,7 @@ NUMBERS = {
     '10': 'десять',
 }
 
+# Константа с описанием команд
 COMMANDS = {
     'go <direction>': 'перейти в направлении (north/south/east/west)',
     '<direction>': 'перейти в направлении (north/south/east/west)',
@@ -77,5 +82,11 @@ COMMANDS = {
     'help': 'показать это сообщение'
 }
 
+# Константы с параметрами для случайных событий
 EVENT_PROBABILITY = 10
 EVENT_COUNT = 2
+EVENT_INTENSIVITY = 4
+TRAP_DMG_PROBABILITY = 9
+BEAST_DMG_PROBABILITY = 8
+EVENT1_DEATH_DMG = 3
+EVENT2_DEATH_DMG = 2
