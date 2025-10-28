@@ -36,7 +36,6 @@ def move_player(game_state: dict, direction: str) -> None:
       if "rusty_key" in game_state['player_inventory']:
       
         print("Вы используете найденный ключ, чтобы открыть путь в комнату сокровищ.")
-        game_state['player_inventory'].remove('rusty_key')
         game_state['current_room'] = ROOMS[game_state['current_room']]['exits'][direction] # noqa: E501
         game_state['steps_taken'] += 1
         describe_current_room(game_state=game_state)
